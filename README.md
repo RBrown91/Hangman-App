@@ -27,6 +27,9 @@ Users should be able to:
 
 ## My process
 
+![](./assets/images/DesktopScreenshot.png)
+![](./assets/images/MobileScreenshot.png)
+
 ### Built with
 
 - Semantic HTML5 markup
