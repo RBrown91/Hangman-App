@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./assets/images/favicon-32x32.png"
+    />
+
+    <link rel="stylesheet" href="styles.css" />
+
+    <title>Frontend Mentor | Hangman game</title>
+  </head>
+  <body>
+    <div>
+      <dialog open>
+        <h2>SELECT A CATEGORY</h2>
+        <div class="category-buttons">
+          <button class="categoryBtn">MOVIES</button>
+          <button class="categoryBtn">TV SHOWS</button>
+          <button class="categoryBtn">COUNTRIES</button>
+          <button class="categoryBtn">CAPITAL CITIES</button>
+          <button class="categoryBtn">ANIMALS</button>
+          <button class="categoryBtn">SPORTS</button>
+        </div>
+      </dialog>
+    </div>
+    <header>
+      <p id="chosen-category"></p>
+      <div class="health-bar">
+        <progress id="health" max="8"></progress>
+        <img src="./assets/images/icon-heart.svg" alt="" />
+      </div>
+    </header>
+
+    <main>
+      <div id="guess-display"></div>
+
+      <div class="keyboard">
+        <button>A</button>
+        <button>B</button>
+        <button>C</button>
+        <button>D</button>
+        <button>E</button>
+        <button>F</button>
+        <button>G</button>
+        <button>H</button>
+        <button>I</button>
+        <button>J</button>
+        <button>K</button>
+        <button>L</button>
+        <button>M</button>
+        <button>N</button>
+        <button>O</button>
+        <button>P</button>
+        <button>Q</button>
+        <button>R</button>
+        <button>S</button>
+        <button>T</button>
+        <button>U</button>
+        <button>V</button>
+        <button>W</button>
+        <button>X</button>
+        <button>Y</button>
+        <button>Z</button>
+      </div>
+    </main>
+    <dialog id="end-game-dialog">
+      <h2 id="end-game-result"></h2>
+
+      <p id="end-game-word"></p>
+      <button id="play-again-button">Play Again!</button>
+    </dialog>
+    <script src="app.js"></script>
+    <script type="text/javascript" src="data.json"></script>
+  </body>
+</html>

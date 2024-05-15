@@ -1,0 +1,190 @@
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  font-family: "Mouse Memoirs";
+  background-image: url(./assets/images/background-desktop.svg);
+  background-size: cover;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 36px;
+  gap: 2rem;
+}
+
+img {
+  height: 24px;
+}
+
+main {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  gap: 4rem;
+  height: 80%;
+  width: 65vw;
+}
+
+#guess-display {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 4rem;
+}
+
+.div-guess-tile {
+  width: 60px;
+  height: 70px;
+  background-color: #2463ff;
+  color: white;
+  border-radius: 8px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 42px;
+  opacity: 20%;
+}
+
+.word-wrapper {
+  display: flex;
+  flex-direction: row;
+  gap: 0.5rem;
+}
+
+.keyboard {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+  justify-content: center;
+}
+
+.keyboard button {
+  height: 50px;
+  width: 70px;
+  font-size: 28px;
+  font-family: "Mouse Memoirs";
+  border-radius: 8px;
+  background-color: white;
+  color: #261676;
+  border: none;
+}
+
+.keyboard button[disabled] {
+  opacity: 20%;
+}
+
+.keyboard button:hover {
+  background-image: linear-gradient(#fe71fe, #7199ff);
+  color: white;
+  box-shadow: 5px 2.5px 2.5px #261676;
+}
+.keyboard button:active {
+  background-image: linear-gradient(#be3cbe, #7199ff);
+  color: white;
+  box-shadow: 5px 2.5px 2.5px #261676;
+}
+
+#chosen-category {
+  color: white;
+}
+
+dialog[open] {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 24px;
+  gap: 1rem;
+  border-radius: 8px;
+  background-color: #261676;
+  color: white;
+  border: 1px solid black;
+}
+
+dialog[open] button {
+  width: 11rem;
+  height: 3rem;
+  border-radius: 8px;
+  color: white;
+  background-color: #2463ff;
+  border: none;
+  font-family: "Mouse Memoirs";
+  font-size: 22px;
+}
+
+dialog[open] button:hover {
+  background-color: #082b82;
+}
+dialog[open] button:active {
+  background-color: #041644;
+}
+
+dialog h2 {
+  margin: 0;
+  font-size: 48px;
+}
+
+.category-buttons {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1rem;
+}
+
+.health-bar {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+@media (max-width: 700px) {
+  body {
+    background-image: url(./assets/images/background-mobile.svg);
+    background-size: cover;
+    width: 100vw;
+  }
+  #guess-display {
+    gap: 0.5rem;
+    display: grid;
+    justify-items: center;
+  }
+  .div-guess-tile {
+    width: 40px;
+    height: 40px;
+    font-size: 28px;
+    gap: 0.25rem;
+  }
+  header {
+    font-size: 24px;
+    flex-direction: column;
+  }
+  .keyboard {
+    gap: 0.75rem;
+  }
+  .keyboard button {
+    width: 35px;
+    height: 35px;
+    font-size: 20px;
+  }
+  dialog[open] {
+    font-size: 18px;
+  }
+  dialog[open] button {
+    width: 6rem;
+    height: 3rem;
+    border-radius: 8px;
+    font-size: 18px;
+    margin: auto;
+  }
+
+  dialog[open] h2 {
+    font-size: 30px;
+  }
+}
